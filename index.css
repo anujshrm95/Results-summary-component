@@ -1,0 +1,225 @@
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+
+.main{
+    display: flex;
+    align-items: center;
+    height: 450px;
+    width: 650px;
+    border-radius: 30px;
+}
+
+
+.column1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    background-color:  hsl(252, 100%, 67%);
+    height: 100%;
+    border-radius: 30px;
+    background:linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color:white;
+    
+}
+.result{
+    color: hsl(224, 42%, 80%);
+}
+.mark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:200px;
+    width: 200px;
+    border-radius: 100%;
+    background:linear-gradient(  hsl(241, 87%, 58%)  95%,hsl(252, 100%, 67%) );
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+}
+.sevensix{
+    font-size: 80px;
+    color: white;
+    
+}
+.great{
+    color: white ; 
+    margin: 10px;
+    font-size: 30px;
+}
+.scored{
+    width: 200px;
+    color:hsl(224, 42%, 80%);
+    font-size: 15px;
+    text-align: center;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+
+
+
+
+/* column 2 */
+
+
+
+.column2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    
+}
+.heading{
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 220px;
+}
+.summ{
+    text-align: left;
+    
+}
+
+.reaction{
+    margin: 10px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: hsla(0, 100%, 67%, 0.2);
+    color: var(--Light-red);
+    
+}
+.memory{
+    margin: 10px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: hsla(39, 100%, 56%, 0.2);
+    color: var(--Orangey-yellow);
+}
+.verbal{
+    margin: 10px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: hsla(166, 100%, 37%, 0.2);
+    color: var(--Green-teal);
+}
+.visual{
+    margin: 10px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: hsla(234, 85%, 45%, 0.2);
+    color:hsl(224, 30%, 27%);
+}
+
+.bttn{
+    margin-top: 40px;
+    background:linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 10px;
+    border-radius: 20px;
+    width: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* mobile design */
+@media ( max-width: 750px){ 
+    body{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+    .main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .column1{
+        height: 80%;
+        width: 100%;
+        padding: 0px;
+        margin-left: -10px;
+        margin-top: -10px;
+        border-radius: 0px;
+        border-bottom-left-radius:20px ;
+        border-bottom-right-radius:20px ;
+    }
+    .result{
+        font-size: 15px;
+    }
+    .mark{
+        height: 120px;
+        width: 120px;
+        margin-top: -5px;
+        font-size: 15px;
+    }
+    .sevensix{
+        font-size: 40px;
+    }
+    .great{
+        font-size: 20px;
+        margin-top: -5px;
+    }
+    .scored{
+        margin-bottom: 30px;
+        width: 300px;
+        color: hsl(224, 42%, 80%);
+    }
+
+/* summary part */
+
+    .column2{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .summ{
+        font-size: 20px;
+    }
+    .row{
+        
+        margin-left: 60px;
+    }
+    .reaction{
+        width: 300px;
+    }
+    .memory{
+        width: 300px;
+    }
+    .verbal{
+        width: 300px;
+    }
+    .visual{
+        width: 300px;
+    }
+    .bttn{
+        margin-left: 70px;
+        width: 300px;
+        background:hsl(224, 30%, 27%);
+    }
+    
+}
+
